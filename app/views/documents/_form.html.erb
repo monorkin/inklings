@@ -1,0 +1,9 @@
+<%# locals: (document:) %>
+
+<%= form_for @document do |form| %>
+  <%= form.hidden_field :parent_id %>
+
+  <section class="prose">
+    <%= form.rich_text_area :content %>
+  </section>
+<% end %>

@@ -1,0 +1,28 @@
+<div class="mx-auto flex flex-col gap-y-2 mb-4">
+  <section class="flex flex-row mb-2 justify-between">
+    <div class="prose">
+      <%= link_to_previous_document(@document) %>
+    </div>
+
+    <div class="flex flex-row gap-x-2 text-gray-500">
+      <%= link_to "Edit", edit_document_path(@document) %>
+      <%= button_to "Delete", @document, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+    </div>
+  </section>
+
+  <section class="prose">
+    <%= @document.content %>
+  </section>
+
+  <hr class="b-0 bt-1 border-gray-200 my-2">
+
+  <section class="prose">
+    <ul>
+      <% @document.children.each do |child| %>
+        <li><%= link_to child.title, child %></li>
+      <% end %>
+    </ul>
+
+    <%= link_to "+ New Document", new_document_path(parent_id: @document.id), class: "block text-center" %>
+  </section>
+</div>

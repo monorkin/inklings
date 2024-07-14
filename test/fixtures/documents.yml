@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+the_rise_of_urban_agriculture:
+  title: "The Rise of Urban Agriculture: Reconnecting Cities with Food Production"
+  parent: null
+
+the_importance_of_cybersecurity_in_the_digital_age:
+  title: "The Importance of Cybersecurity in the Digital Age"
+  parent: null
+
+the_role_of_encryption_in_cybersecurity:
+  title: "The Role of Encryption in Cybersecurity"
+  parent: the_importance_of_cybersecurity_in_the_digital_age
+
+the_impact_of_phishing_on_cybersecurity:
+  title: "The Impact of Phishing on Cybersecurity"
+  parent: the_importance_of_cybersecurity_in_the_digital_age

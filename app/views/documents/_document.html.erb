@@ -1,0 +1,10 @@
+<%# locals: (document:) %>
+
+<li>
+  <%= link_to document.title, document %>
+  <% unless document.leaf? %>
+    <ul class="ml-4">
+      <%= render partial: 'document', collection: document.children, as: :document %>
+    </ul>
+  <% end %>
+</li>

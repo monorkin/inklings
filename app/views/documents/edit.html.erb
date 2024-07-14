@@ -1,0 +1,15 @@
+<div class="mx-auto flex flex-col gap-y-2 mb-4">
+  <section class="prose">
+    <%= link_to("< Back to document", @document) %>
+  </section>
+
+  <section class="prose">
+    <h1>Editing: <%= @document.title %></h1>
+  </section>
+
+  <hr class="b-0 bt-1 border-gray-200 my-2">
+
+  <section>
+    <%= render "form", document: @document %>
+  </section>
+</div>

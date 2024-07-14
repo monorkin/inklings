@@ -1,0 +1,16 @@
+@import "https://unpkg.com/trix@2.0.0/dist/trix.css";
+@import "actiontext.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+}
+
+*/
